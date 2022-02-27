@@ -1,0 +1,34 @@
+{
+  "name": "12_traffico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass sass/main.scss css/style.css -w",
+    "compile": "sass sass/main.scss css/style.css",
+    "prefix": "npx postcss css/style.css --use autoprefixer -o css/style.css",
+    "minify": "cleancss -o css/style.css css/style.css",
+    "build": "npm-run-all compile prefix minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarolinaxxWisniewska/Traffico.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarolinaxxWisniewska/Traffico/issues"
+  },
+  "homepage": "https://github.com/KarolinaxxWisniewska/Traffico#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
+    "autoprefixer": "^10.4.2",
+    "clean-css": "^5.2.4",
+    "clean-css-cli": "^5.5.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.8"
+  }
+}
